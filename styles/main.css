@@ -91,6 +91,10 @@ img {
   left: 0;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .site-header__wrapper {
   width: 100%;
   display: flex;
@@ -152,7 +156,7 @@ img {
 }
 
 .navbar__item {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .dropdown-list {
@@ -171,17 +175,18 @@ img {
 
 .site-header__tel {
   text-decoration-line: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--main-color);
 }
 
 .site-header__btn-wrapper {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   column-gap: 16px;
-  margin-top: 200px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 50px;
 }
 
 .site-header__btn {
@@ -331,3 +336,144 @@ img {
 }
 
 /* hero section ends */
+
+/* our cars section starts */
+
+.our-cars {
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+
+.our-cars__title {
+  margin-block: 0;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.our-cars__desc {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: var(--gray);
+}
+
+.type-of-cars-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.type-of-cars__link {
+  padding: 10px 12px;
+  text-decoration-line: none;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--main-color);
+  border: 1px solid #e5e7ea;
+  border-radius: 100px;
+}
+
+.active-link {
+  color: var(--pseudo-color);
+  background-color: var(--green);
+  border: transparent;
+}
+
+.cars__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.cars__desc {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.cars__img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cars-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.cars__item {
+  padding-left: 20px;
+  padding-block: 24px;
+  padding-right: 24px;
+  background-color: var(--silver);
+  border-radius: 16px;
+}
+
+.cars__info-list {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  row-gap: 10px;
+}
+
+.cars-info__item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.cars-info__item::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/human-icon-min.svg");
+  background-repeat: no-repeat;
+}
+
+.cars-info__item:nth-child(2)::before {
+  background-image: url("../images/gearbox-min.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.cars-info__item:nth-child(3)::before {
+  background-image: url("../images/human-age-min.svg");
+  width: 13px;
+  height: 16px;
+}
+
+.cars-info__item:nth-child(4)::before {
+  background-image: url("../images/petrol-min.svg");
+  width: 11px;
+  height: 14px;
+}
+
+.cars__info-text {
+  font-size: 12px;
+}
+
+.our-cars__link {
+  display: block;
+  width: 120px;
+  margin-inline: auto;
+  margin-top: 30px;
+  padding-block: 12px;
+  text-align: center;
+  text-decoration-line: none;
+  font-size: 14px;
+  color: var(--pseudo-color);
+  background-color: var(--green);
+  border-radius: 100px;
+}
+
+/* our cars section ends */

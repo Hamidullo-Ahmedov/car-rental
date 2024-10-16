@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Car rental</title>
 
   <!-- Normalize CSS -->
   <link rel="stylesheet" href="./styles/normalize.css">
@@ -18,37 +18,87 @@
   
   <!-- header part starts -->
 
-  <header class="site-header">
+  <header class="site-header js-header">
     <div class="container">
-      <div class="header-wrapper">
-        <a class="site-logo" href="./index.html">
-          <img class="logo-img"
-          width=""
-          height=""
-          src="" alt="">
+      <div class="site-header__wrapper">
+        <a class="logo" href="./index.html">
+          <img class="logo__img"
+          width="150"
+          height="40"
+          src="./images/logo-min.svg" alt="this is the img and logo of the site">
         </a>
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#">
+        <button class="site-header__hamburg-btn js-hamburger-btn">
 
-              </a>
-            </li>
-            <li class="navbar-item">
-              <a href="#">
+        </button>
+        <div class="site-header__inner">
+          <div class="site-header__content-wrapper">
+            <a class="sidebar-logo" href="./index.html">
+              <img class="sidebar-logo__img" src="./images/logo-min.svg"
+              width="150"
+              height="40"
+              alt="this is the picture and the link of the site">
+            </a>
+            <button class="cancel-btn js-cancel-btn">
 
-              </a>
-            </li>
-            <li class="navbar-item">
-              <a href="#">
-
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a class="sign-up" href="#">
-
-        </a>
+            </button>
+          </div>
+          <nav class="navbar">
+            <ul class="navbar__list list-unstyled">
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">
+                  Categories
+                </a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">
+                  About Us
+                </a>
+                <ul class="dropdown-list dropdown list-unstyled">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      News
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      Careers
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      Locations
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">
+                  Help center
+                </a>
+                <ul class="dropdown dropdown-list list-unstyled">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      FAQ
+                    </a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <a class="site-header__tel" href="tel:+18554200000">+1 855 420 0000</a>
+          <div class="site-header__btn-wrapper">
+            <button class="site-header__btn">
+            </button>
+            <a class="login" href ="#">
+              Login
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -63,7 +113,7 @@
 
     <section class="hero">
       <div class="container">
-        <div class="hero-wrapper">
+        <div class="hero__wrapper">
 
         </div>
       </div>
@@ -87,9 +137,7 @@
 
   <!-- footer part ends -->
 
-  <script src="./main.js">
-
-  </script>
+  <script src="./main.js"></script>
 
 </body>
 </html>

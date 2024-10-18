@@ -702,3 +702,90 @@ img {
 }
 
 /* brands section ends */
+
+/* services section starts */
+
+.services {
+  padding-block: 50px;
+}
+
+.services__title {
+  margin-top: 0;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.services__desc {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.services__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px 20px 14px;
+  background-color: var(--silver);
+  border-radius: 20px;
+}
+
+.services__item::after {
+  content: "";
+  width: 33px;
+  height: 28px;
+  background-image: url("../images/desktop-monitor-min.svg");
+}
+
+.services__item:nth-child(2)::after {
+  width: 25px;
+  height: 26px;
+  background-image: url("../images/shield-min.svg");
+}
+
+.services__item:nth-child(3)::after {
+  width: 33px;
+  height: 30px;
+  background-image: url("../images/customer-service-min.svg");
+}
+
+.services__item:nth-child(4)::after {
+  width: 32px;
+  height: 29px;
+  background-image: url("../images/wallet-min.svg");
+}
+
+.services__content-wrapper {
+  width: 180px;
+}
+
+.services__subtitle-wrapper {
+  width: 150px;
+}
+
+.services__subtitle {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.services__description {
+  margin-block: 0;
+  font-size: 12px;
+  color: var(--gray);
+
+}
+
+/* services section ends */

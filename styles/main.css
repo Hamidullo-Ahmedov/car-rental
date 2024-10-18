@@ -481,7 +481,8 @@ img {
 /* article section starts */
 
 .site-article {
-  padding-block: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   background-color: var(--silver);
 }
 
@@ -605,6 +606,23 @@ img {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+
+.article__list::-webkit-scrollbar {
+  height: 3px;
+  border-radius: 10px;
+}
+
+.article__list::-webkit-scrollbar-track {
+  background-color: #7fc1a2;
+}
+
+.article__list::-webkit-scrollbar-thumb {
+  background-color: var(--pseudo-color);
+  height: 3px;
+  border-radius: 10px;
 }
 
 .article__item {
@@ -615,35 +633,9 @@ img {
 
 .article__content-wrapper {
   background-color: var(--green);
-  padding-top: 16px;
-  padding-left: 16px;
-  overflow-x: scroll;
+  padding: 16px 20px;
   border-radius: 0px 0px 16px 16px;
-  box-sizing: border-box;
 }
-
-.article__content-wrapper::-webkit-scrollbar {
-  background-color: transparent;
-}
-
-.article__scroll {
-  display: inline-block;
-  margin-top: 20px;
-  width: 215px;
-  overflow-x: scroll;
-  box-sizing: border-box;
-}
-
-.article__scroll::-webkit-scrollbar {
-  height: 3px;
-  background-color: var(--pseudo-color);
-  border-radius: 10px;
-}
-
-.article__scroll::-webkit-scrollbar-thumb {
-  background-color: #ff7e5f;
-}
-
 
 .article__customer-opinion {
   margin-top: 14px;
@@ -671,6 +663,42 @@ img {
   background-image: url("../images/stars-min.svg");
 }
 
-
+.article__carousel-wrapper {
+  display: none;
+}
 
 /* article section ends */
+
+/* brands section starts */
+
+.brands {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.brands__title {
+  font-size: 18px;
+  margin-bottom: 24px;
+  margin-top: 0;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.brands__list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+
+.brands__list::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.brands__img {
+  width: 100px;
+  height: 28px;
+}
+
+/* brands section ends */

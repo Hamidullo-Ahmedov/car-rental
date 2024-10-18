@@ -477,3 +477,200 @@ img {
 }
 
 /* our cars section ends */
+
+/* article section starts */
+
+.site-article {
+  padding-block: 50px;
+  background-color: var(--silver);
+}
+
+.article__inner {
+  padding: 24px 20px;
+  background-color: var(--pseudo-color);
+  border-radius: 16px 16px 0px 0px;
+}
+
+.article__info {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-bottom: 16px;
+  text-decoration-line: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4285f4;
+}
+
+.article__info::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url("../images/mini-google.svg");
+}
+
+.article__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.article__line {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(90deg, #ea4335 19.83%, #fbbc05 65%, #34a853 82.29%, #4285f4 100%);
+}
+
+.article__desc {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.article__link-wrapper {
+  display: block;
+  padding: 10px 20px;
+  background: var(--1, radial-gradient(230.93% 230.93% at 102.01% 2.03%, 
+  #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: inherit;
+  border-radius: 100px;
+}
+
+.article__link {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration-line: none;
+  border-radius: 100px;
+  background-clip: padding-box;  
+  -webkit-text-fill-color: transparent;
+  border: 2px solid transparent;
+  border-image: var(--1, radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%));
+  border-image-slice: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.article__customer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 5px;
+}
+
+.article__customer-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.article__customer-wrapper::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  background-image: url("../images/mini-ronald.png");
+}
+
+.article__customer-inner::after {
+  content: "";
+  width: 30px;
+  height: 20px;
+  margin-bottom: 5px;
+  background-image: url("../images/medium-google.svg");
+  background-repeat: no-repeat;
+}
+
+.article__customer-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.article__customer-gmail {
+  text-decoration-line: none;
+  font-size: 10px;
+  color: var(--gray);
+}
+
+.article__list {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.article__item {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--pseudo-color);
+}
+
+.article__content-wrapper {
+  background-color: var(--green);
+  padding-top: 16px;
+  padding-left: 16px;
+  overflow-x: scroll;
+  border-radius: 0px 0px 16px 16px;
+  box-sizing: border-box;
+}
+
+.article__content-wrapper::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.article__scroll {
+  display: inline-block;
+  margin-top: 20px;
+  width: 215px;
+  overflow-x: scroll;
+  box-sizing: border-box;
+}
+
+.article__scroll::-webkit-scrollbar {
+  height: 3px;
+  background-color: var(--pseudo-color);
+  border-radius: 10px;
+}
+
+.article__scroll::-webkit-scrollbar-thumb {
+  background-color: #ff7e5f;
+}
+
+
+.article__customer-opinion {
+  margin-top: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 32px;  
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--main-color);
+  border-bottom: 1.5px solid #e5e7ea;
+}
+
+.article__customer-rating {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.article__customer-rating::after {
+  content: "";
+  width: 100px;
+  height: 20px;
+  background-image: url("../images/stars-min.svg");
+}
+
+
+
+/* article section ends */

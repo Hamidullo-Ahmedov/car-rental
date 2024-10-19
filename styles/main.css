@@ -721,7 +721,7 @@ img {
 .services__desc {
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -785,7 +785,99 @@ img {
   margin-block: 0;
   font-size: 12px;
   color: var(--gray);
-
 }
 
 /* services section ends */
+
+/* safety section starts */
+
+.safety {
+  padding-block: 50px;
+}
+
+.safety__wrapper {
+  padding-block: 24px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  border: 2px solid #e5e7ea;
+  position: relative;
+  overflow: hidden;
+}
+
+.safety__wrapper::after {
+  position: absolute;
+  top: -20px;
+  right: -100px;
+  display: inline-block;
+  content: "";
+  width: 160px;
+  height: 160px;
+  background-image: url("../images/half-green-circle.svg");
+  background-repeat: no-repeat;
+}
+
+.safety__title {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.safety__desc {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: var(--gray);
+  line-height: 20px;
+}
+
+.safety__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.safety__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-right: 8px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  background-color: var(--silver);
+  border-radius: 16px;
+}
+
+.safety__item::after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: "";
+  width: 17px;
+  height: 24px;
+  background-image: url("../images/chemical-min.svg");
+}
+
+.safety__item:nth-child(2)::after {
+  width: 24px;
+  height: 18px;
+  background-image: url("../images/heart-icon-min.svg");
+}
+
+.safety__item:nth-child(3)::after {
+  width: 25px;
+  height: 20px;
+  background-image: url("../images/private-icon-min.svg");
+}
+
+.safety__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--main-color);
+}
+
+/* safety section ends */
